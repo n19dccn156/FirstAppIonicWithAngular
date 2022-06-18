@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>
+            Thanh Sang
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-button (click)="onClickSecondPage()" shape="round" color="secondary">
+        second page
+        <ion-icon name="chevron-forward"></ion-icon>
+    </ion-button>
+
+    <app-tabbar></app-tabbar>
+</ion-content>
+
+<ion-footer>
+    <p>goodbye</p>
+</ion-footer>

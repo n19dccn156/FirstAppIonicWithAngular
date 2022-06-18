@@ -1,0 +1,73 @@
+#container {
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#container strong {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+#container p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #8c8c8c;
+    margin: 0;
+}
+
+#container a {
+    text-decoration: none;
+}
+
+.item1 { grid-area: course; }
+.item3 { grid-area: exam; }
+.item2 { grid-area: btn; }
+
+.grid-container {
+    display: grid;
+    grid-template:
+      'course course course course course btn'
+      'exam exam exam exam exam btn';
+}
+
+.item1 {
+	grid-area: course;
+}
+.item3 {
+	grid-area: exam;
+}
+.item2 {
+	grid-area: btn;
+}
+.grid-container {
+	display: grid;
+	grid-template: 'course course course course course btn' 'exam exam exam exam exam btn';
+	>div {
+		text-align: center;
+	}
+}
+
+// .item1 { grid-area: course; }
+// .item3 { grid-area: exam; }
+// .item2 { grid-area: btn; }
+
+// .grid-container {
+//     display: grid;
+//     grid-template:
+//       'course course course course course btn'
+//       'exam exam exam exam exam btn';
+//     grid-gap: 10px;
+//     background-color: #2196F3;
+//     padding: 10px;
+// }
+
+// .grid-container > div {
+//     background-color: rgba(255, 255, 255, 0.8);
+//     text-align: center;
+//     padding: 20px 0;
+//     font-size: 30px;
+// }

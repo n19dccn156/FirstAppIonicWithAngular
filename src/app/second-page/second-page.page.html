@@ -1,0 +1,63 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>second-page</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-button (click)="onClickPrevPage()" shape="round" color="danger">
+        <ion-icon name="home"></ion-icon>
+        Back
+    </ion-button>
+
+    <!-- <ion-radio-group value="https://courses.ut.edu.vn/">
+        <ion-list-header>
+            <ion-label>Name</ion-label>
+        </ion-list-header>
+            <ion-item>
+                <ion-label>https://courses.ut.edu.vn/</ion-label>
+                <ion-radio slot="start" value="https://courses.ut.edu.vn/"></ion-radio>
+            </ion-item>
+            <ion-item>
+                <ion-label>https://exam.ut.edu.vn/</ion-label>
+                <ion-radio slot="start" value="https://exam.ut.edu.vn/"></ion-radio>
+            </ion-item>
+
+            <ion-button (click)="onClickRedirect($event)" shape="round" color="dark">
+                <ion-icon name="log-out"></ion-icon>
+                GO
+            </ion-button>
+    </ion-radio-group> -->
+
+    <!-- <ion-grid> -->
+        <ion-row>
+            <ion-col size="8">
+                <ion-item>
+                    <ion-label>courses.ut.edu.vn</ion-label>
+                    <!-- <ion-radio slot="start" value="https://courses.ut.edu.vn/"></ion-radio> -->
+                </ion-item>
+            </ion-col>
+            <ion-col size="4">
+                <ion-button (click)="onClickRedirect('https://courses.ut.edu.vn/')" shape="round" color="dark">
+                    <ion-icon name="log-out"></ion-icon>
+                    GO
+                </ion-button>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="8">
+                <ion-item>
+                    <ion-label>exam.ut.edu.vn</ion-label>
+                    <!-- <ion-radio slot="start" value="https://exam.ut.edu.vn/"></ion-radio> -->
+                </ion-item>
+            </ion-col>
+            <ion-col size="4">
+                <ion-button (click)="onClickRedirect('https://exam.ut.edu.vn/')" shape="round" color="dark">
+                    <ion-icon name="log-out"></ion-icon>
+                    GO
+                </ion-button>
+            </ion-col>
+        </ion-row>
+    <!-- </ion-grid> -->
+
+</ion-content>
